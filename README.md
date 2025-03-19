@@ -1,0 +1,1 @@
+This program needs the software configuration - python 3.11 The dependencies are - [flask import Flask, render_template, request, send_from_directory flask_socketio import SocketIO, send, disconnect import os import re import threading import time]
