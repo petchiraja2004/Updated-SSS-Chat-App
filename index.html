@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #0d1b2a, #1b263b, #415a77);
+            color: white;
+            overflow: hidden;
+          }
+      
+          /* Glowing streaks background */
+          body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            z-index: -1;
+            opacity: 1;
+          }
+      
+          .container {
+            text-align: center;
+            max-width: 500px;
+            padding: 20px;
+          }
+      
+          h1 {
+            font-size: 45px;
+            font-weight: bold;
+            margin-bottom: 50px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+          }
+      
+          .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            margin: 50px auto;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+          }
+      
+          .button.yellow {
+            background-color: #ffc107;
+            box-shadow: 0 4px 8px rgba(255, 193, 7, 0.5);
+            color:black;
+          }
+      
+          .button.yellow:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(255, 193, 7, 0.8);
+          }
+      
+          .button.blue {
+            background-color: #007bff;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.5);
+          }
+      
+          .button.blue:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 123, 255, 0.8);
+          }
+      
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Secure Socket System</h1>
+    <a href="/user1" class="button yellow">Go to Admin Chat</a>
+    <a href="/user2" class="button blue">Go to Client Chat</a>
+</div>
+
+</body>
+</html>
